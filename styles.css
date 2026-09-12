@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    .page {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+}
+
+
+
+
+
+.page {
+    background-color:hsl(212, 45%, 89%);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+}
+
+.qr-card__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    background-color: white;
+    padding: clamp(1.6rem, 0rem + 8vw, 4rem);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 16px 16px 40px;
+    box-shadow: 0 24px 40px rgba(31, 50, 81, 0.12);
+}
+
+.qr-card__image{
+ max-width: 25rem;
+ border-radius: 15px;
+}
+
+.qr-card__inner{
+    font-family: "Outfit", sans-serif;
+    font-size: 2.2rem;
+    max-width: 25rem;
+    padding: 24px 14px 0;
+    text-align: center;
+}
+.qr-card__inner-title{
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+}
+.qr-card__inner__content{
+    font-size: 1.4rem;
+}
+
+@media (max-width: 375px) {
+    .qr-card__container {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .qr-card__inner-title {
+        font-size: 1.25rem;
+    }
+}
