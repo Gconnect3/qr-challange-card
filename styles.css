@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     max-width: 50rem;
     background-color: white;
-    padding: clamp(1.6rem, 0rem + 8vw, 4rem);
+    padding: 1.6rem 1.6rem 4rem 1.6rem;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -55,15 +55,23 @@ body {
 .qr-card__inner-title{
     font-family: "Outfit", sans-serif;
     font-weight: bold;
+    line-height: 120%;
+    font-size: 2.2rem;
+    letter-spacing: 0px;
 }
 .qr-card__inner__content{
     font-size: 1.4rem;
+    color: hsl(216,15%,48%);
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 140%;
+
 }
 
 @media (max-width: 375px) {
     .qr-card__container {
         width: 100%;
-        max-width: 320px;
+        max-width: 280px;
     }
 
     .qr-card__inner-title {
